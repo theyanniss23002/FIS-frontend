@@ -1,0 +1,57 @@
+<div class="content-container" fxLayout="column" fxLayoutAlign="stretch" fxFlex="auto">
+  <swiper *ngIf="type == 'component' && show" class="swiper-container" [config]="config" fxFlex="auto">
+    <div *ngFor="let slide of slides" class="swiper-slide">
+      <div class="d-flex flex-column swiper-wrap" [style.background]="slide.background" fxLayout="column"
+           fxLayoutAlign="center center" fxFlexFill>
+        <div class="container">
+          <div class="swiper-block">
+            <span class="swiper-block__title">{{slide.title}}</span>
+            <span class="swiper-block__subtitle">{{slide.subtitle}}</span>
+            <span class="swiper-block__description">{{slide.descriptions}}</span>
+            <ng-container [ngSwitch]="slide.type">
+              <ng-container *ngSwitchCase="'main'">
+                <ng-container [ngTemplateOutlet]="main"></ng-container>
+              </ng-container>
+              <ng-container *ngSwitchCase="'info'">
+                <ng-container [ngTemplateOutlet]="info"></ng-container>
+              </ng-container>
+              <ng-container *ngSwitchCase="'about'">
+                <ng-container [ngTemplateOutlet]="about"></ng-container>
+              </ng-container>
+              <ng-container *ngSwitchCase="'other'">
+                <ng-container [ngTemplateOutlet]="other"></ng-container>
+              </ng-container>
+            </ng-container>
+          </div>
+        </div>
+      </div>
+    </div>
+  </swiper>
+</div>
+
+
+<ng-template #main>
+  <div class="d-flex mt-4">
+    <a class="swiper-home__link swiper-home__wipe link wipe">Registration</a>
+    <a class="swiper-home__link swiper-home__wipe link wipe">Authorization</a>
+    <a class="swiper-home__link swiper-home__wipe link wipe">Go to app</a>
+  </div>
+</ng-template>
+
+<ng-template #info>
+  <div class="d-flex">
+    <h1>INFO</h1>
+  </div>
+</ng-template>
+
+<ng-template #about>
+  <div class="d-flex">
+    <h1>ABOUT</h1>
+  </div>
+</ng-template>
+
+<ng-template #other>
+  <div class="d-flex">
+    <h1>OTHER</h1>
+  </div>
+</ng-template>

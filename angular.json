@@ -93,8 +93,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/assets/fonts/GoshaSans.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }

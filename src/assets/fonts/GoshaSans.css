@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'GoshaSans';
+  font-family: 'GoshaSansRegular';
   src: local('GoshaSans Regular'),
   local('Colus-Regular'),
   url('GoshaSans/GoshaSansRegular.woff') format('woff'),
@@ -10,7 +10,7 @@
 }
 
 @font-face {
-  font-family: 'GoshaSans';
+  font-family: 'GoshaSansBold';
   src: local('GoshaSansBold'),
   local('Colus-Bold'),
   url('GoshaSans/GoshaSansBold.woff') format('woff'),

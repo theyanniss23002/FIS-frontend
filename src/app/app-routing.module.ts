@@ -5,7 +5,10 @@ import {LoginComponent} from "./auth/login/login.component";
 import {SignupComponent} from "./auth/signup/signup.component";
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  {
+    path: '', component: HomeComponent,
+    data: { backgroundIsVisible: false }
+  },
   {path: 'auth',
     loadChildren: () => import('./auth/auth.module')
       .then(m => m.AuthModule)
