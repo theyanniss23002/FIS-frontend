@@ -1,4 +1,47 @@
-h1 {
-  color: black;
-  z-index: 300;
+@import 'src/styles/alternate';
+@import 'src/styles/common';
+
+.login {
+  &-logo {
+    background-image: url('../../../assets/img/svg/logo.svg');
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: relative;
+    &:before {
+      content: '';
+      height: 1px;
+      background: $darkBlue;
+      width: 300px;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &-wrap {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  &-subtitle {
+    padding-top: 5px;
+  }
+  &-border {
+    border-bottom: 2px solid $btnColor;
+    padding-bottom: 5px;
+    transition: .3s;
+  }
+  &-form {
+    padding-top: 40px;
+    &__submit {
+      padding-top: 80px;
+      display: block;
+      width: fit-content;
+    }
+  }
 }
+
+
+

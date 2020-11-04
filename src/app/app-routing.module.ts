@@ -4,7 +4,6 @@ import {HomeComponent} from "./home/home.component";
 import {LoginComponent} from "./auth/login/login.component";
 import {SignupComponent} from "./auth/signup/signup.component";
 import {MainComponent} from "./platform/main/main.component";
-import {main} from "@angular/compiler-cli/src/main";
 
 const routes: Routes = [
   {
@@ -21,7 +20,7 @@ const routes: Routes = [
     loadChildren: () => import('./platform/platform.module')
       .then(m => m.PlatformModule)
   },
-  { path: 'main', component: MainComponent },
+  { path: 'main/:name', component: MainComponent },
 ];
 
 @NgModule({

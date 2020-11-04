@@ -1,6 +1,30 @@
 <section>
   <div class="container">
-    <h1>LOGIN</h1>
-    <h1>PAGE</h1>
+    <div class="wrap-height">
+      <div class="card-item blur-filter">
+        <a class="login-logo" href="https://github.com/theyanniss23002/FIS-frontend"></a>
+        <div class="login-wrap">
+          <span class="login-title title-font">Log In</span>
+          <span class="login-subtitle subtitle-font">You are not registered yet?
+            <a routerLink="/signup" class="login-border subtitle-font">Do it right now</a>
+          </span>
+          <form class="login-form" #authForm="ngForm">
+            <div class="input-container">
+              <input [(ngModel)]="username" [ngModelOptions]="{standalone: true}" type="text" id="login" required="required"/>
+              <label for="login">Username</label>
+              <div class="bar"></div>
+            </div>
+            <div class="input-container">
+              <input [(ngModel)]="password" [ngModelOptions]="{standalone: true}" type="password" id="password" required="required"/>
+              <label for="password">Password</label>
+              <div class="bar"></div>
+            </div>
+            <app-purple-btn class="login-form__submit" [value]="value" (click)="handleLogin()"></app-purple-btn>
+            <span *ngIf="isInvalid">Invalid Credentials</span>
+            <span *ngIf="isValid">Good Job, Arthur</span>
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

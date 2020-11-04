@@ -7,6 +7,8 @@ import {BackgroundComponent} from './background/background.component';
 import {HomeComponent} from './home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {SharedModule} from "./shared/shared.module";
+import {SwiperModule} from "ngx-swiper-wrapper";
+import {AuthModule} from "./auth/auth.module";
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import {SharedModule} from "./shared/shared.module";
     AppRoutingModule,
     NgbModule,
     SharedModule,
+    SwiperModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
