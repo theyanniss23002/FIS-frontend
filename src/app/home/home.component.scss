@@ -1,6 +1,5 @@
 @import 'src/styles/alternate';
-
-@import './src/styles/alternate';
+@import 'src/styles/common';
 
 .action-container,
 .content-container {
@@ -88,36 +87,33 @@
     position: absolute;
     &__first {
       background-repeat: no-repeat;
-      //background-image: url("../../../assets/img/first.svg");
+      background-image: url("~src/assets/img/first.svg");
       position: absolute;
       width: 70vw;
       height: 70vh;
       z-index: 1;
       opacity: .9;
       animation: moving 5s infinite linear;
-      filter: blur(3px);
     }
     &__second {
       background-repeat: no-repeat;
-      //background-image: url("../../../assets/img/second.svg");
+      background-image: url("~src/assets/img/second.svg");
       position: absolute;
       width: 70vw;
       height: 70vh;
       z-index: 2;
       opacity: .8;
       animation: moving 9s infinite linear;
-      filter: blur(3px);
     }
     &__last {
       background-repeat: no-repeat;
-      //background-image: url("../../../assets/img/last.svg");
+      background-image: url("~src/assets/img/last.svg");
       position: absolute;
       width: 70vw;
       height: 70vh;
       z-index: 3;
       opacity: .7;
       animation: moving 15s infinite linear;
-      filter: blur(3px);
     }
   }
 }
