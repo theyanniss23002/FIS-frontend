@@ -5,6 +5,7 @@ import { SignupComponent } from './signup/signup.component';
 import {RouterModule} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {PurpleBtnComponent} from "../shared/purple-btn/purple-btn.component";
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
   declarations: [LoginComponent, SignupComponent, PurpleBtnComponent],
@@ -15,6 +16,7 @@ import {PurpleBtnComponent} from "../shared/purple-btn/purple-btn.component";
     CommonModule,
     RouterModule,
     FormsModule,
+    SharedModule,
   ]
 })
 export class AuthModule { }

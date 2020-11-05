@@ -1,9 +1,15 @@
 @import 'alternate';
 
+h1 {
+  color: $textColor;
+}
+
 .wrap-height {
   min-height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+  margin: 0 2%;
 }
 
 .blur-filter {
@@ -29,18 +35,18 @@
 .title-font {
   font-family: $homeFontBold;
   font-size: 40px;
-  color: $darkBlue;
+  color: $textColor;
 }
 
 .subtitle-font {
   font-family: $homeFontRegular;
   font-size: 20px;
-  color: $darkBlue;
+  color: $textColor;
 }
 
 a:hover {
   text-decoration: none;
-  color: $btnColor;
+  color: $brightColor;
   transition: .3s;
 }
 
@@ -59,20 +65,20 @@ a:hover {
     width: 100%;
     height: 60px;
     border: 0;
-    color: $btnColor;
+    color: $brightColor;
     font-size: 24px;
     font-weight: 400;
     &[type="text"] {
-      color: $btnColor;
+      color: $brightColor;
       font-family: $homeFontRegular;
     }
     &[type="password"] {
-      color: $btnColor;
+      color: $brightColor;
       font-family: $homeFontBold;
     }
     &:focus {
       ~ label {
-        color: #9d9d9d;
+        color: $textColor;
         transform: translate(-12%, -50%) scale(0.75);
       }
       ~ .bar {
@@ -84,7 +90,7 @@ a:hover {
     }
     &:valid {
       ~ label {
-        color: #9d9d9d;
+        color: $textColor;
         transform: translate(-12%, -50%) scale(0.75);
       }
     }
@@ -93,7 +99,7 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    color: $darkBlue;
+    color: $textColor;
     font-family: $homeFontRegular;
     opacity: 0.6;
     font-size: 24px;
@@ -105,14 +111,14 @@ a:hover {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #757575;
+    background: $textColor;
     width: 100%;
     height: 1px;
     &:before,
     &:after {
       content: '';
       position: absolute;
-      background: $btnColor;
+      background: $brightColor;
       width: 0;
       height: 2px;
       transition: .2s ease;

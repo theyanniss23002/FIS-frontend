@@ -15,11 +15,11 @@ export class HomeComponent implements OnInit {
 
   valueItem = [
     {
-      path: 'auth/signup',
+      path: '/signup',
       value: 'Registration'
     },
     {
-      path: 'auth/login',
+      path: '/login',
       value: 'Authorization'
     },
     {
@@ -35,28 +35,28 @@ export class HomeComponent implements OnInit {
       title: 'Welcome to the Face Idea Service',
       subtitle: 'Free space for intermedia',
       descriptions: 'In this application you will receive dog slippers and popados from Pindos',
-      background: '#FFBE0F',
+      background: '#1F1F1F',
       type: 'main',
     },
     {
       title: 'Exploitation',
       subtitle: 'Free space for intermedia',
       descriptions: 'In this application you will receive dog slippers and popados from Pindos',
-      background: '#07B38B',
+      background: '#1F1F1F',
       type: 'info',
     },
     {
       title: 'Documentation',
       subtitle: 'Free space for intermedia',
       descriptions: 'In this application you will receive dog slippers and popados from Pindos',
-      background: '#FF514E',
+      background: '#1F1F1F',
       type: 'about',
     },
     {
       title: 'App view',
       subtitle: 'Free space for intermedia',
       descriptions: 'In this application you will receive dog slippers and popados from Pindos',
-      background: '#131560',
+      background: '#1F1F1F',
       type: 'other',
     },
   ];

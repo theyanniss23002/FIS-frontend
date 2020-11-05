@@ -58,17 +58,17 @@
       font-family: $homeFontBold;
       font-size: 67px;
       line-height: 1em;
-      color: $darkBlue;
+      color: $brightColor;
     }
     &__subtitle {
       font-family: $homeFontRegular;
       font-size: 40px;
-      color: $darkBlue;
+      color: $textColor;
     }
     &__description {
       font-family: $homeFontRegular;
       font-size: 20px;
-      color: $darkBlue;
+      color: $textColor;
     }
   }
 }
@@ -87,7 +87,7 @@
     position: absolute;
     &__first {
       background-repeat: no-repeat;
-      background-image: url("~src/assets/img/first.svg");
+      background-image: url("~src/assets/img/svg/first.svg");
       position: absolute;
       width: 70vw;
       height: 70vh;
@@ -97,7 +97,7 @@
     }
     &__second {
       background-repeat: no-repeat;
-      background-image: url("~src/assets/img/second.svg");
+      background-image: url("~src/assets/img/svg/second.svg");
       position: absolute;
       width: 70vw;
       height: 70vh;
@@ -107,7 +107,7 @@
     }
     &__last {
       background-repeat: no-repeat;
-      background-image: url("~src/assets/img/last.svg");
+      background-image: url("~src/assets/img/svg/last.svg");
       position: absolute;
       width: 70vw;
       height: 70vh;

@@ -2,6 +2,7 @@
 @import 'src/styles/common';
 
 .login {
+  position: relative;
   &-logo {
     background-image: url('~src/assets/img/svg/logo.svg');
     background-repeat: no-repeat;
@@ -12,12 +13,39 @@
     &:before {
       content: '';
       height: 1px;
-      background: $darkBlue;
+      background: $textColor;
       width: 300px;
       display: block;
       position: absolute;
       bottom: 0;
       left: 0;
+    }
+  }
+  &-lines {
+    position: absolute;
+    width: calc(100% - 80px);
+    height: 2px;
+    background: $textColor;
+    left: 40px;
+    top: 30px;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 48px;
+      height: 2px;
+      background: $textColor;
+      right: -41px;
+      top: -13px;
+      transform: rotate(143deg);
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      max-height: 600px;
+      height: 100vh;
+      width: 2px;
+      right: 0;
+      background: $textColor;
     }
   }
   &-wrap {
@@ -29,7 +57,7 @@
     padding-top: 5px;
   }
   &-border {
-    border-bottom: 2px solid $btnColor;
+    border-bottom: 2px solid $brightColor;
     padding-bottom: 5px;
     transition: .3s;
   }
